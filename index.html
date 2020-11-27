@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="title">Branching Out</h1>
+    <div class="app-container">
+        <div class="canvas-container">
+            <canvas id="tree-canvas"></canvas>
+            <div id="save-button">
+                <span class="material-icons">
+                    save
+                </span>
+            </div>
+            
+        </div>
+        <div class="options-container">
+            <div class="option-group">
+                <label for="treeThickness">Tree Thickness</label>
+                <input type="range" name="treeThickness" id="treeThickness" class="tuner"
+                    min="0" max="1" value="0.5" step="any">
+            </div>
+
+            <div class="option-group">
+                <label for="leafSize">Leaf Size</label>
+                <input type="range" name="leafSize" id="leafSize" class="tuner"
+                min="0" max="1" value="0.5" step="any">
+            </div>
+           
+            <div id="draw-button">
+                DRAW
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="material-icons">
+            nature
+        </span>
+        FlooflPoofl 2020
+    </div>
+    
+    <script src="./js/TreeRandomizer.js"></script>
+    <script src="./js/TreeDrawer.js"></script>
+    <script src="./js/TreeApp.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
